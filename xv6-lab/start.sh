@@ -1,3 +1,3 @@
-joswd=pwd
-
-docker run --rm -it -v $(joswd)jos:/jos xv6
+joswd=$(pwd)
+echo ${joswd}
+docker run --rm -it -v ${joswd}/jos:/jos xv6
